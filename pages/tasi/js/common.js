@@ -14,9 +14,7 @@ $(document).ready(function(){
     });
 
     resultSliderRollWidth = $(".results-slider__roll").width();
-    alert(resultSliderRollWidth);
     resultInnerWidth = $(".results-inner").width();
-    alert(resultInnerWidth);
 
 
 
