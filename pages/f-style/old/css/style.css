@@ -1,0 +1,71 @@
+.d-flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.trigger {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.trigger:nth-child(1) {
+    background: #121210;
+}
+
+.trigger:nth-child(2) {
+    background: #474747;
+}
+
+.trigger:nth-child(3) {
+    background: #8c1210;
+}
+
+.trigger:nth-child(4) {
+    background: #212121;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 25px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    display: none;
+    transition: .3s;
+    opacity: 0;
+}
+
+.active-card {
+    display: block;
+    opacity: 1;
+    transition: .3s;
+}
+
+.active-trigger {
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.card:nth-child(1) {
+    background: #121210;
+}
+
+.card:nth-child(2) {
+    background: #474747;
+}
+
+.card:nth-child(3) {
+    background: #8c1210;
+}
+
+.card:nth-child(4) {
+    background: #212121;
+}
+
