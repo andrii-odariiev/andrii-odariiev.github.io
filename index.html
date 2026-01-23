@@ -72,7 +72,7 @@ form.addEventListener("submit", async (e) => {
 
   if (res.ok) {
     form.reset();
-    alert("Заявка відправлена! Скоро звʼяжуся з вами 😉");
+    window.location.href = "/thanks";
   } else {
     alert("Ой… щось пішло не так. Спробуй ще раз.");
   }
