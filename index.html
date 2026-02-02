@@ -87,46 +87,61 @@ Created by
 <a href="https://t.me/andrii_prog" target="_blank" rel="noopener" data-astro-cid-sz7xmlte>
 Andrii Odariiev
 </a> </span> </div> </footer>  <!-- <slot /> --> 
-<script>
-    const form = document.getElementById("contact-form");
 
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const data = new FormData(form);
-  const res = await fetch(form.action, {
-    method: "POST",
-    body: data,
-    headers: { Accept: "application/json" }
-  });
-
-  if (res.ok) {
-    form.reset();
-    window.location.href = "/thanks";
-  } else {
-    alert("Ой… щось пішло не так. Спробуй ще раз.");
-  }
-});
-</script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
+    // ===== ФОРМА =====
+    const form = document.getElementById("contact-form");
 
-    
+    if (form) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
 
+        const data = new FormData(form);
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: data,
+          headers: { Accept: "application/json" }
+        });
+
+        if (res.ok) {
+          // 🔹 Подія конверсії: форма
+          if (window.gtag) {
+            gtag("event", "form_submit", {
+              event_category: "conversion",
+              event_label: "contact_form",
+              page_path: window.location.pathname
+            });
+          }
+
+          form.reset();
+
+          // 🔹 Даємо аналітиці відпрацювати
+          setTimeout(() => {
+            window.location.href = "/thanks";
+          }, 300);
+        } else {
+          alert("Ой… щось пішло не так. Спробуй ще раз.");
+        }
+      });
+    }
+
+    // ===== TELEGRAM КЛІК =====
     document.body.addEventListener("click", (event) => {
       const link = event.target.closest('a[href*="t.me/"]');
       if (!link) return;
 
       if (window.gtag) {
         gtag("event", "telegram_click", {
-        event_category: "engagement",
-        event_label: link.href,
-        link_text: link.innerText,
-        page_path: window.location.pathname
-      });
+          event_category: "engagement",
+          event_label: link.href,
+          link_text: link.innerText,
+          page_path: window.location.pathname
+        });
       }
     });
   });
 </script>
+
 
 </body></html>
