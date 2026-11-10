@@ -1,169 +1,236 @@
-<!DOCTYPE html><html lang="en"> <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-62XVR5W3X0"></script>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PLC55R3L');</script>
-  <!-- End Google Tag Manager -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-62XVR5W3X0');
-  </script>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.16.6"><title>Сайти для малого бізнесу — Andrii Odariiev</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"><link rel="stylesheet" href="/astro/style.css"></head> <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLC55R3L"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-    <header data-astro-cid-3ef6ksr2> <section class="container d-flex" data-astro-cid-3ef6ksr2> <div class="header-logo d-flex" data-astro-cid-3ef6ksr2> <img src="/astro/hero.png" alt="" data-astro-cid-3ef6ksr2> <span data-astro-cid-3ef6ksr2>CODETYPE | Andrii Odariiev</span> </div> <div class="header-contact d-flex" data-astro-cid-3ef6ksr2> <i class="fa-brands fa-telegram" data-astro-cid-3ef6ksr2></i> <a href="https://t.me/andrii_prog" data-astro-cid-3ef6ksr2>@andrii.prog</a> </div> </section> </header>  <section class="container" data-astro-cid-anhloy43> <div class="hero_inner d-flex" data-astro-cid-anhloy43> <div class="hero-content" data-astro-cid-anhloy43> <span data-astro-cid-anhloy43>Менше шуму — більше сенсу.</span> <h1 data-astro-cid-anhloy43>
-Простий сайт для бізнесу, 
-                щоб отримувати заявки.
-</h1> <ul data-astro-cid-anhloy43> <li data-astro-cid-anhloy43>
-Лаконічний дизайн.
-</li> <li data-astro-cid-anhloy43>
-Доступність.
-</li> <li data-astro-cid-anhloy43>
-Швидкий запуск.
-</li> </ul> <p data-astro-cid-anhloy43>
-Отримайте готове рішення в найкоротші терміни і збільшуйте
-                ваші прибутки уже сьогодні
-</p> <a href="#contact" class="contact-me contact-me__light" data-astro-cid-tozfylzr>
-Замовити сайт
-</a> 
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codetype: мобільні ігри</title>
+<meta name="description" content="Codetype — невелика незалежна студія мобільних ігор. Наша гра: Keep Your Boat, річкова пригода від вікінгів до Античності.">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Codetype">
+<meta property="og:description" content="Незалежна студія мобільних ігор. Keep Your Boat: річкова пригода від вікінгів до Античності.">
+<meta property="og:image" content="https://andrii-odariiev.github.io/og.jpg">
+<meta property="og:url" content="https://andrii-odariiev.github.io/">
+<meta name="theme-color" content="#0f2a3d">
+<style>
+  :root {
+    --bg: #0f2a3d;
+    --bg-2: #143650;
+    --card: #183f5c;
+    --ink: #f3ece0;
+    --muted: #b7c6d3;
+    --accent: #f2b544;
+    --accent-ink: #2b1d08;
+    --line: rgba(255,255,255,.12);
+    --radius: 20px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); }
+  img { display: block; max-width: 100%; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
 
-<a href="/pages/tasi/" target="_blank" rel="noopener" class="demo_site_link" data-astro-cid-tozfylzr>
-  Приклад сайту 
-  </a>
+  /* header */
+  .top { position: sticky; top: 0; z-index: 5; background: rgba(15,42,61,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .brand { font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); text-decoration: none; font-size: 15px; }
+  .brand span { color: var(--accent); }
+  .nav { display: flex; align-items: center; gap: 18px; font-size: 15px; }
+  .nav a { color: var(--muted); text-decoration: none; }
+  .nav a:hover { color: var(--ink); }
+  .lang { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .lang button { background: none; border: 0; color: var(--muted); font: inherit; font-size: 13px; font-weight: 700; padding: 4px 10px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+  @media (max-width: 560px) { .nav a { display: none; } }
 
-</div> <div class="growth-image" data-astro-cid-anhloy43> <img src="/astro/growth.png" alt="" data-astro-cid-anhloy43> </div> </div> </section>  <section class="container" data-astro-cid-uz7do4zo> <header class="section-header" data-astro-cid-uz7do4zo> <div class="header-squere" data-astro-cid-uz7do4zo></div> <h2 data-astro-cid-uz7do4zo>Готове рішення</h2> <p data-astro-cid-uz7do4zo>Для малого і середнього бізнесу.</p> </header> <div class="without-block d-flex" data-astro-cid-uz7do4zo> <article class="without-item d-flex" data-astro-cid-uz7do4zo> <span data-astro-cid-uz7do4zo>X</span> <div class="without-item_content" data-astro-cid-uz7do4zo> <h3 data-astro-cid-uz7do4zo>БЕЗ</h3> <span data-astro-cid-uz7do4zo>Складних техічних деталей</span> </div> </article> <article class="without-item d-flex" data-astro-cid-uz7do4zo> <span data-astro-cid-uz7do4zo>X</span> <div class="without-item_content" data-astro-cid-uz7do4zo> <h3 data-astro-cid-uz7do4zo>БЕЗ</h3> <span data-astro-cid-uz7do4zo>Розтягнутих термінів</span> </div> </article> <article class="without-item d-flex" data-astro-cid-uz7do4zo> <span data-astro-cid-uz7do4zo>X</span> <div class="without-item_content" data-astro-cid-uz7do4zo> <h3 data-astro-cid-uz7do4zo>БЕЗ</h3> <span data-astro-cid-uz7do4zo>Абонплат і підписок</span> </div> </article> </div> <div class="features-text" data-astro-cid-uz7do4zo> <p data-astro-cid-uz7do4zo>Лише <b data-astro-cid-uz7do4zo>готове рішення</b> від 0 до повної готовності <b data-astro-cid-uz7do4zo>за 5 робочих днів</b> з моменту узгодження усіх деталей.</p> </div> </section>  <section class="container" data-astro-cid-7axbvwiu> <div class="advantages-content" data-astro-cid-7axbvwiu> <h2 data-astro-cid-7axbvwiu>Що ви отримаєте?</h2> <article data-astro-cid-7axbvwiu> <div class="adventages-text" data-astro-cid-7axbvwiu> <h3 data-astro-cid-7axbvwiu>Швидке підключення односторінкового сайту з формою зворотнього зв’язку.</h3> <p data-astro-cid-7axbvwiu>
-Без нагромадження непотрібного функціоналу, без необхідності постійної підтримки сайту. Лише простота та 
-                    ефективність. Вам залишається налаштувати рекламу і отримувати заявки.
-</p> </div> </article> <article data-astro-cid-7axbvwiu> <div class="adventages-text" data-astro-cid-7axbvwiu> <h3 data-astro-cid-7axbvwiu>Високу швидкість роботи сайту.</h3> <p data-astro-cid-7axbvwiu>
-Це забезпечує зручність користування сайтом на будь-яких пристроях: телефони, планшети, розумні годинники. А найголовніше — вашим клієнтам не доводиться чекати завантаження сайту. Результат — краще утримування,
-                    більше заявок, ліпша ефективність.
-</p> </div> </article> <article data-astro-cid-7axbvwiu> <div class="adventages-text" data-astro-cid-7axbvwiu> <h3 data-astro-cid-7axbvwiu>Адаптивність під комп’ютери, планшети і телефони.</h3> <p data-astro-cid-7axbvwiu>
-Ваші клієнти не будуть втрачати жодної інформації про ваш товар або послугу, хоч би з якого пристрою вони 
-                    зайшли. Крім цього, це справляє враження професійності, що з вами варто мати справу і вам можна довіряти.
-</p> </div> </article> <article data-astro-cid-7axbvwiu> <div class="adventages-text" data-astro-cid-7axbvwiu> <h3 data-astro-cid-7axbvwiu>Підключення аналітики для налаштування реклами.</h3> <p data-astro-cid-7axbvwiu>
-Ви маєте змогу налаштовувати рекламу, задіювати маркетологів і встановлювати скрипти для інтеграцій з іншими
-                    сервісами, якщо це вам потрібно.
-</p> </div> </article> <span class="d-flex" data-astro-cid-7axbvwiu> <a href="#contact" class="contact-me contact-me__light" data-astro-cid-tozfylzr>
-Безкоштовна консультація
-</a>  </span> </div> </section>  <section class="container" data-astro-cid-doxw6rdr> <header class="section-header" data-astro-cid-doxw6rdr> <div class="header-squere" data-astro-cid-doxw6rdr></div> <h2 data-astro-cid-doxw6rdr>Як відбувається підключення?</h2> <p data-astro-cid-doxw6rdr>Ось кроки, у які ви отримаєте свій сайт:</p> </header> <div class="steps-content" data-astro-cid-doxw6rdr> <div class="step-item d-flex step-left" data-astro-cid-doxw6rdr> <article class="d-flex" data-astro-cid-doxw6rdr> <h4 data-astro-cid-doxw6rdr>1.</h4> <div class="step-item-text" data-astro-cid-doxw6rdr> <h3 data-astro-cid-doxw6rdr>Заповення форми</h3> <p data-astro-cid-doxw6rdr>
-Ви заповнюєте форму, в якій описуєте структуру сайту,
-                        напрямок діяльності і інші деталі, а також свої контактні
-                        дані, по яким можна з вами зв’язатися.
-</p> </div> </article> </div> <div class="arrow d-flex" data-astro-cid-doxw6rdr> <img src="/astro/arrow_1.png" alt="" data-astro-cid-doxw6rdr> </div> <div class="step-item d-flex step-right" data-astro-cid-doxw6rdr> <article class="d-flex" data-astro-cid-doxw6rdr> <h4 data-astro-cid-doxw6rdr>2.</h4> <div class="step-item-text" data-astro-cid-doxw6rdr> <h3 data-astro-cid-doxw6rdr>Узгодження деталей</h3> <p data-astro-cid-doxw6rdr>
-На даному етапі ми затверджуємо структуру сайту, 
-                        усі тексти і зображення, які будуть використовуватися
-                        на сайті, а також хостинг і домен сайту. Комунікація
-                        відбувається у зручному для вас форматі.
-</p> </div> </article> </div> <div class="arrow d-flex" data-astro-cid-doxw6rdr> <img src="/astro/arrow_2.png" alt="" data-astro-cid-doxw6rdr> </div> <div class="step-item d-flex step-left" data-astro-cid-doxw6rdr> <article class="d-flex" data-astro-cid-doxw6rdr> <h4 data-astro-cid-doxw6rdr>3.</h4> <div class="step-item-text" data-astro-cid-doxw6rdr> <h3 data-astro-cid-doxw6rdr>Реалізація</h3> <p data-astro-cid-doxw6rdr>
-Після того, як всі деталі узгоджено, ви оплачуєте створення
-                        сайту, я оплачую хостинг сайту, домен, створюю сайт і публікую 
-                        його. Після цього я проводжу демонстрацію сайту і відповідаю 
-                        на усі ваші запитання щодо сайту. 1 раунд правок по сайту входить у вартість.
-</p> </div> </article> </div> </div>  </section>
-<section class="container" data-astro-cid-anhloy43> 
-  
-  <div class="reviews_inner d-flex" data-astro-cid-anhloy43> 
-    <div class="reviews-content d-flex" data-astro-cid-anhloy43>
-      <div class="review-item">
-        <img src="astro/review_1.png" alt="">
-        <h4>Допрацювання сторінок</h4>
-        <p>Дякуємо за роботу! Ми будемо співпрацювати ще...</p>
+  /* hero */
+  .hero { padding: 72px 0 56px; }
+  .eyebrow { color: var(--accent); font-weight: 700; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 12px; }
+  .hero h1 { font-size: clamp(34px, 6vw, 58px); line-height: 1.08; margin: 0 0 18px; max-width: 14em; }
+  .hero p { color: var(--muted); font-size: 19px; max-width: 34em; margin: 0; }
+
+  /* game */
+  .game { background: var(--card); border-radius: 28px; overflow: hidden; border: 1px solid var(--line); }
+  .game-banner { aspect-ratio: 1024 / 500; width: 100%; height: auto; object-fit: cover; }
+  .game-body { padding: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  @media (max-width: 760px) { .game-body { grid-template-columns: 1fr; padding: 22px; gap: 20px; } }
+  .game-title { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
+  .game-title img { width: 72px; height: 72px; border-radius: 18px; }
+  .game-title h2 { margin: 0; font-size: 28px; line-height: 1.15; }
+  .game-title small { display: block; color: var(--muted); font-size: 14px; font-weight: 400; }
+  .game p { margin: 0 0 14px; }
+  .status { display: inline-flex; align-items: center; gap: 8px; background: rgba(242,181,68,.14); color: var(--accent); border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 700; margin-bottom: 18px; }
+  .status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .features { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .features li { background: var(--bg-2); border-radius: 14px; padding: 12px 16px; }
+  .features b { display: block; }
+  .features span { color: var(--muted); font-size: 15px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+  .btn { display: inline-block; text-decoration: none; font-weight: 700; padding: 12px 20px; border-radius: 12px; font-size: 15px; }
+  .btn-main { background: var(--accent); color: var(--accent-ink); }
+  .btn-ghost { border: 1px solid var(--line); color: var(--ink); }
+  .btn:hover { filter: brightness(1.08); }
+
+  /* screenshots */
+  .shots { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 28px 0 8px; margin-top: 4px; }
+  .shots img { flex: 0 0 auto; width: 200px; aspect-ratio: 9 / 16; height: auto; border-radius: 16px; scroll-snap-align: start; background: var(--bg-2); }
+  @media (max-width: 560px) { .shots img { width: 46vw; } }
+
+  section { padding: 40px 0; }
+  h3.section { font-size: 26px; margin: 0 0 8px; }
+  .muted { color: var(--muted); }
+
+  /* contact */
+  .contact { background: var(--bg-2); border-radius: var(--radius); padding: 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+  .contact p { margin: 0; }
+  .mail { font-size: 20px; font-weight: 700; word-break: break-all; }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/">Code<span>type</span></a>
+    <nav class="nav">
+      <a href="#games" data-i18n="nav_games">Ігри</a>
+      <a href="#contact" data-i18n="nav_contact">Контакти</a>
+      <div class="lang" role="group" aria-label="Мова / Language">
+        <button type="button" data-lang="uk" aria-pressed="true">UA</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
-      <div class="review-item">
-        <img src="astro/review_1.png" alt="">
-        <h4>Веб-сайт за макетом</h4>
-        <p>Дякую за роботу. Рекомендую !</p>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow" data-i18n="eyebrow">Інді-студія мобільних ігор</p>
+    <h1 data-i18n="hero_title">Робимо прості ігри, в які хочеться грати ще раз.</h1>
+    <p data-i18n="hero_text">Codetype — невелика незалежна студія. Ми створюємо казуальні ігри для телефонів: легко почати, цікаво пройти до кінця.</p>
+  </section>
+
+  <section id="games">
+    <article class="game">
+      <img class="game-banner" src="/assets/kyb/feature.jpg" width="1024" height="500" alt="Keep Your Boat">
+      <div class="game-body">
+        <div>
+          <div class="game-title">
+            <img src="/assets/kyb/icon.png" width="72" height="72" alt="">
+            <h2>Keep Your Boat <small data-i18n="genre">Аркада · Android</small></h2>
+          </div>
+          <div class="status" data-i18n="status">Скоро в Google Play</div>
+          <p data-i18n="game_lead">Хапай весло і вперед за течією! Річкова пригода, де треба вчасно повертати, обминати каміння та збирати скарби, щоб довезти човен до фінішу цілим.</p>
+          <p class="muted" data-i18n="game_controls">Гра однією рукою: тримай палець ліворуч чи праворуч унизу екрана.</p>
+          <div class="btns">
+            <a class="btn btn-main" href="/keep-your-boat-site/" data-i18n="btn_page">Сторінка гри</a>
+            <a class="btn btn-ghost" href="/keep-your-boat-site/privacy.html" data-i18n="btn_privacy">Політика конфіденційності</a>
+          </div>
+        </div>
+        <ul class="features">
+          <li><b data-i18n="f1_t">Дві епохи, 60 рівнів</b><span data-i18n="f1_d">Від драккара вікінгів крізь чотири пори року до Античності: Егейський берег, Протока сирен, Вогняний острів.</span></li>
+          <li><b data-i18n="f2_t">Щоразу нові випробування</b><span data-i18n="f2_d">Вири, лучники на берегах, крижини, сирени, ворожі трієри та грецький вогонь.</span></li>
+          <li><b data-i18n="f3_t">Розвилки</b><span data-i18n="f3_d">Спокійна гілка чи складна, але з бочкою скарбів? Обирай сам.</span></li>
+          <li><b data-i18n="f4_t">Човни й прикраси</b><span data-i18n="f4_d">Купуй нові човни в порту, обирай вітрило, фігуру на носі, корпус і слід на воді.</span></li>
+        </ul>
       </div>
-      <div class="review-item">
-        <img src="astro/review_2.png" alt="">
-        <h4>Лендінг по дизайну</h4>
-        <p>Праця була необхідна терміново, і була виконана негайно.</p>
+    </article>
+
+    <div class="shots" aria-label="Скріншоти">
+      <img data-shot="01" src="/assets/kyb/shot_uk_01.jpg" width="540" height="960" loading="lazy" alt="">
+      <img data-shot="02" src="/assets/kyb/shot_uk_02.jpg" width="540" height="960" loading="lazy" alt="">
+      <img data-shot="03" src="/assets/kyb/shot_uk_03.jpg" width="540" height="960" loading="lazy" alt="">
+      <img data-shot="04" src="/assets/kyb/shot_uk_04.jpg" width="540" height="960" loading="lazy" alt="">
+      <img data-shot="06" src="/assets/kyb/shot_uk_06.jpg" width="540" height="960" loading="lazy" alt="">
+      <img data-shot="08" src="/assets/kyb/shot_uk_08.jpg" width="540" height="960" loading="lazy" alt="">
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div>
+        <h3 class="section" data-i18n="contact_t">Зв'язатися з нами</h3>
+        <p class="muted" data-i18n="contact_d">Питання, відгуки про гру чи пропозиції співпраці — пишіть, ми відповідаємо.</p>
       </div>
-      <div class="review-item">
-        <img src="astro/review_3.png" alt="">
-        <h4>Верстка</h4>
-        <p>Відмінно виконана робота! Будемо замовляти ще</p>
-      </div>
-    </div> 
-    <a href="#contact" class="contact-me contact-me__light" data-astro-cid-tozfylzr>
-      Отримати сайт
-     </a> 
-     <a href="/pages/tasi/" target="_blank" rel="noopener" class="demo_site_link" data-astro-cid-tozfylzr>
-      Демо готового сайту 
-      </a>
-  </div> 
-</section>
-<section id="contact" data-astro-cid-zbjjch6a> <h2 data-astro-cid-zbjjch6a>Зворотній зв’язок</h2> <div class="contact_inner d-flex" data-astro-cid-zbjjch6a> <form id="contact-form" method="POST" action="https://formspree.io/f/mykkkbyq" data-astro-cid-zbjjch6a> <div class="form-field" data-astro-cid-zbjjch6a> <label for="name" data-astro-cid-zbjjch6a>Імʼя</label> <input type="text" id="name" name="name" placeholder="Андрій" required data-astro-cid-zbjjch6a> </div> <div class="form-field" data-astro-cid-zbjjch6a> <label for="login" data-astro-cid-zbjjch6a>Viber / Telgram</label> <input id="login" name="login" placeholder="@andrii.prog" data-astro-cid-zbjjch6a> </div> <div class="form-field" data-astro-cid-zbjjch6a> <label for="message" data-astro-cid-zbjjch6a>Повідомлення — опціонально</label> <textarea id="message" name="message" rows="5" placeholder="Ми займаємося ремонтом автомобілів і хочемо розповісти у сайті про свої послуги" data-astro-cid-zbjjch6a></textarea> </div> <button class="contact-me contact-me__dark contact-me__dark__mobile" type="submit" form="contact-form" data-astro-cid-zbjjch6a>Залишити заявку</button> </form> <div class="contact-text" data-astro-cid-zbjjch6a> <ul data-astro-cid-zbjjch6a> <li data-astro-cid-zbjjch6a>5 000 грн.</li> <li data-astro-cid-zbjjch6a>5 днів.</li> <li data-astro-cid-zbjjch6a>Готовий сайт.</li> </ul> <p data-astro-cid-zbjjch6a>
-Розширяйте бізнес та збільшуйте прибутки уже сьогодні!
-</p> <button class="contact-me contact-me__dark contact-me__dark__desktop" type="submit" form="contact-form" data-astro-cid-zbjjch6a>Залишити заявку</button> </div> </div> </section>  <footer class="site-footer" data-astro-cid-sz7xmlte> <div class="container footer-inner" data-astro-cid-sz7xmlte> <span data-astro-cid-sz7xmlte>© 2026. Всі права захищені.</span> <span data-astro-cid-sz7xmlte>
-Created by
-<a href="https://t.me/andrii_prog" target="_blank" rel="noopener" data-astro-cid-sz7xmlte>
-Andrii Odariiev
-</a> </span> </div> </footer>  <!-- <slot /> --> 
+      <a class="mail" href="mailto:codetype.create@gmail.com">codetype.create@gmail.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Codetype</span>
+    <span><a href="/keep-your-boat-site/privacy.html" data-i18n="footer_privacy">Політика конфіденційності Keep Your Boat</a></span>
+  </div>
+</footer>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    // ===== ФОРМА =====
-    const form = document.getElementById("contact-form");
+(function () {
+  var en = {
+    nav_games: "Games",
+    nav_contact: "Contact",
+    eyebrow: "Indie mobile game studio",
+    hero_title: "We make simple games you want to play one more time.",
+    hero_text: "Codetype is a small independent studio. We make casual games for phones: easy to start, fun to play all the way through.",
+    genre: "Arcade · Android",
+    status: "Coming soon to Google Play",
+    game_lead: "Grab an oar and ride the current! A river adventure where you turn at the right moment, dodge rocks and collect treasure to bring your boat to the finish in one piece.",
+    game_controls: "One-handed controls: hold your finger at the bottom left or right of the screen.",
+    btn_page: "Game page",
+    btn_privacy: "Privacy policy",
+    f1_t: "Two eras, 60 levels",
+    f1_d: "From a Viking drakkar through all four seasons to Ancient Greece: the Aegean Coast, the Strait of Sirens, Fire Island.",
+    f2_t: "New challenges all the way",
+    f2_d: "Whirlpools, archers on the banks, ice floes, sirens, enemy triremes and Greek fire.",
+    f3_t: "Forks in the river",
+    f3_d: "Take the calm branch, or the hard one with a treasure barrel? Your call.",
+    f4_t: "Boats and skins",
+    f4_d: "Buy new boats in the port and pick your sail, prow figure, hull and wake.",
+    contact_t: "Get in touch",
+    contact_d: "Questions, feedback on the game or partnership ideas: write to us, we reply.",
+    footer_privacy: "Keep Your Boat privacy policy"
+  };
+  var nodes = document.querySelectorAll("[data-i18n]");
+  var uk = {};
+  nodes.forEach(function (n) { uk[n.dataset.i18n] = n.childNodes[0].nodeValue; });
+  var titles = { uk: document.title, en: "Codetype: mobile games" };
 
-    if (form) {
-      form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-
-        const data = new FormData(form);
-        const res = await fetch(form.action, {
-          method: "POST",
-          body: data,
-          headers: { Accept: "application/json" }
-        });
-
-        if (res.ok) {
-          // 🔹 Подія конверсії: форма
-          if (window.gtag) {
-            gtag("event", "form_submit", {
-              event_category: "conversion",
-              event_label: "contact_form",
-              page_path: window.location.pathname
-            });
-          }
-
-          form.reset();
-
-          // 🔹 Даємо аналітиці відпрацювати
-          setTimeout(() => {
-            window.location.href = "/thanks";
-          }, 300);
-        } else {
-          alert("Ой… щось пішло не так. Спробуй ще раз.");
-        }
-      });
-    }
-
-    // ===== TELEGRAM КЛІК =====
-    document.body.addEventListener("click", (event) => {
-      const link = event.target.closest('a[href*="t.me/"]');
-      if (!link) return;
-
-      if (window.gtag) {
-        gtag("event", "telegram_click", {
-          event_category: "engagement",
-          event_label: link.href,
-          link_text: link.innerText,
-          page_path: window.location.pathname
-        });
-      }
+  function setLang(lang) {
+    var dict = lang === "en" ? en : uk;
+    nodes.forEach(function (n) {
+      var v = dict[n.dataset.i18n];
+      if (v) n.childNodes[0].nodeValue = v;
     });
+    document.querySelectorAll("[data-shot]").forEach(function (img) {
+      img.src = "/assets/kyb/shot_" + lang + "_" + img.dataset.shot + ".jpg";
+    });
+    document.querySelectorAll("[data-lang]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
+    });
+    document.documentElement.lang = lang;
+    document.title = titles[lang];
+    try { localStorage.setItem("lang", lang); } catch (e) {}
+  }
+
+  document.querySelectorAll("[data-lang]").forEach(function (b) {
+    b.addEventListener("click", function () { setLang(b.dataset.lang); });
   });
+
+  var saved = null;
+  try { saved = localStorage.getItem("lang"); } catch (e) {}
+  var initial = saved || ((navigator.language || "uk").toLowerCase().indexOf("uk") === 0 ? "uk" : "en");
+  if (initial !== "uk") setLang(initial);
+})();
 </script>
-
-
-</body></html>
+</body>
+</html>
